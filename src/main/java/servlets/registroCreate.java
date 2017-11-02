@@ -71,7 +71,13 @@ public class registroCreate extends HttpServlet {
         String password=request.getParameter("password");
         //String mail=request.getParameter("mail");
         
-        
+        System.out.println(" firstname= "+firstname);
+        System.out.println(" lastname= "+lastname);
+        System.out.println(" category= "+category);
+        System.out.println(" career= "+career);
+        System.out.println(" semester= "+semester);
+        System.out.println(" numDocument= "+numDocument);
+        System.out.println(" password= "+password);
         
         
         //Se debe incluir validaciones - Lo recuerda: Gestion de Excepciones.
