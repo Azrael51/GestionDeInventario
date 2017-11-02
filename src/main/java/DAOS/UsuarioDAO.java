@@ -68,8 +68,8 @@ public class UsuarioDAO implements Serializable {
             throw ex;
         } finally {
             if (em != null) {
-                em.close();
                 emf.close();
+                em.close();
             }
         }
     }
