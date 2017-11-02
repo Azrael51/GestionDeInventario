@@ -66,10 +66,10 @@ public class registroCreate extends HttpServlet {
         int category=Integer.parseInt(request.getParameter("category"));
         int career=Integer.parseInt(request.getParameter("career"));
         int semester=Integer.parseInt(request.getParameter("semester"));
-        int typeDocument=Integer.parseInt(request.getParameter("typeDocument"));
+        //int typeDocument=Integer.parseInt(request.getParameter("typeDocument"));
         String numDocument=request.getParameter("numDocument");
         String password=request.getParameter("password");
-        String mail=request.getParameter("mail");
+        //String mail=request.getParameter("mail");
         
         
         
