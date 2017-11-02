@@ -91,7 +91,6 @@ public class registroCreate extends HttpServlet {
         
         try {
             dao.create(usuario);
-            //Existe un problema con el DAO, probablemente es porque no se hace mencion de administrativo.
         } catch (Exception ex) {
             Logger.getLogger(registroCreate.class.getName()).log(Level.SEVERE, null, ex);
         }
