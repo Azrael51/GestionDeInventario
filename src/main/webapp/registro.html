@@ -69,29 +69,29 @@
 				  	<div class="row">
 				  		<br>
 				  		<br>
-					    <form class="col s12">
+					    <form class="col s12" action="registroCreate">
 					      <div class="row">
 					        <div class="input-field col s6">
-					          <input id="first_name" type="text" class="validate">
-					          <label for="first_name">Nombre</label>
+					          <input id="primerNombre" type="text" class="validate" name="firstName">
+					          <label for="primerNombre">Nombre</label>
 					        </div>
 					        <div class="input-field col s6">
-					          		<input id="last_name" type="text" class="validate">
-					          		<label for="last_name">Apellido</label>
+					          		<input id="apellido" type="text" class="validate" name="lastName">
+					          		<label for="apellido">Apellido</label>
 					        	</div>
 					        </div>
 					        <div class="row grey-text">
-					        	<div class="input-field col s12">
-					        		<select>
+					        	<div class="input-field col s12" id="categoria">
+					        		<select name="category">
 								      <option value="" disabled selected>Seleccionar categoria</option>
-								      <option value="1">Administrador</option>
+								      <option value="1">Profesor</option>
 								      <option value="2">Estudiante</option>
 								    </select>
 					        	</div>
 					        </div>
 					        <div class="row grey-text">
-					        	<div class="input-field col s6">
-					        		<select>
+					        	<div class="input-field col s6" id="carrera"> 
+					        		<select name="career">
 								      <option value="" disabled selected>Seleccionar carrera</option>
 								      <option value="1">Administrador de empresas</option>
 								      <option value="2">Ingeniería Sistemas</option>
@@ -106,8 +106,8 @@
 								    </select>
 					        	</div>
 					       
-					        	<div class="input-field col s6">
-					        		<select>
+					        	<div class="input-field col s6" id="semestre">
+					        		<select name="semester">
 								      <option value="" disabled selected>Semestre</option>
 								      <option value="1">1</option>
 								      <option value="2">2</option>
@@ -123,30 +123,30 @@
 					        	</div>
 					        </div>						    
 					        <div class="row grey-text">
-					        	<div class="input-field col s6">
-					        		<select>
+					        	<div class="input-field col s6" id="documento">
+					        		<select name="typeDocument">
 								      <option value="" disabled selected>Tipo de documento</option>
 								      <option value="1">Cedula de ciudadania</option>
 								      <option value="2">Tarjeta de identidad</option>
-								      <option value="2">Cedula extranjera</option>
-								      <option value="2">Pasaporte</option>
+								      <option value="3">Cedula extranjera</option>
+								      <option value="4">Pasaporte</option>
 								    </select>
 					        	</div>
 					        	<div class="input-field col s6">
-					        		<input id="id_document" type="text" class="validate">
-					          		<label for="id_document">Numero documento de identidad</label>
+					        		<input id="numDocumento" type="text" class="validate" name="numDocument">
+					          		<label for="numDocumento">Numero documento de identidad</label>
 					        	</div>
 					        </div>
 					        <div class="row">
 					        	<div class="input-field col s12">
-					          		<input id="password" type="password" class="validate">
-					          		<label for="password">Contraseña</label>
+					          		<input id="contrasena" type="password" class="validate" name="password">
+					          		<label for="contrasena">Contraseña</label>
 					       		 </div>
 					        </div>
 					        <div class="row">
 					        	<div class="input-field col s12">
-					          		<input id="email" type="email" class="validate">
-					          		<label for="email">Email</label>
+					          		<input id="correo" type="email" class="validate" name="mail">
+					          		<label for="correo">Email</label>
 					        	</div>
 					        </div>
 					        <div class='row'>
