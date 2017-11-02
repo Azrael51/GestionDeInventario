@@ -17,7 +17,7 @@
         <servlet-class>com.crunchify.jsp.servlet.HelloCrunchify</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>registroCreate</servlet-name>
+        <servlet-name>registroToCreate</servlet-name>
         <servlet-class>servlets.registroCreate</servlet-class>
     </servlet>
     
@@ -29,7 +29,7 @@
         <url-pattern>/CrunchifyServlet</url-pattern>
     </servlet-mapping>
      <servlet-mapping>
-        <servlet-name>registroCreate</servlet-name>
+        <servlet-name>registroToCreate</servlet-name>
         <url-pattern>/registroCreate</url-pattern>
     </servlet-mapping>
 </web-app>
