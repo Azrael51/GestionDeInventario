@@ -30,6 +30,6 @@
     </servlet-mapping>
      <servlet-mapping>
         <servlet-name>registroCreate</servlet-name>
-        <url-pattern>/registro_de_usuario</url-pattern>
+        <url-pattern>/registroCreate</url-pattern>
     </servlet-mapping>
 </web-app>
