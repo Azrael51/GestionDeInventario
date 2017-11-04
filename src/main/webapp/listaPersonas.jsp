@@ -44,8 +44,8 @@
 		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		      <ul class="right hide-on-med-and-down">
 		        <li><a href="materiales.html">Materiales</a></li>
-		        <li><a href="prestamo.html">Préstamo</a></li>
-		        <li><a href="devolucion.html">Devolución</a></li>
+		        <li><a href="prestamo.html">Pr�stamo</a></li>
+		        <li><a href="devolucion.html">Devoluci�n</a></li>
       			<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Listas<i class="material-icons right">arrow_drop_down</i></a></li>
 		        <li><a href="Login.html"><i class="large material-icons right">account_box</i>Ingresar</a></li>
 		        </ul>
@@ -53,8 +53,8 @@
 		     <!-- En esta parte se pone lo que se va a mostrar a los móviles -->
 		      <ul class="side-nav" id="mobile-demo">
 		        <li><a href="materiales.html">Materiales</a></li>
-		        <li><a href="prestamo.html">Préstamo</a></li>
-		        <li><a href="devolucion.html">Devolución</a></li>
+		        <li><a href="prestamo.html">Pr�stamo</a></li>
+		        <li><a href="devolucion.html">Devoluci�n</a></li>
 
 		        <!-- Dropdown Trigger -->
       			<li><a class="dropdown-button" href="#!" data-activates="dropdown2">Listas<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -66,33 +66,26 @@
 
 <div class="container">
 	<div class="row card-panel orange lighten-4">
-	<table class="highlight responsive-table">
-        <thead>
-          <tr class="orange-text">
-              <th>Nombre</th>
-              <th>Cédula</th>
-              <th>Categoría</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Carlos Bayona</td>
-            <td>10325689465</td>
-            <td>Estudiante</td>
-          </tr>
-          <tr>
-            <td>Santiago Perez</td>
-            <td>1023564897</td>
-            <td>Stripper</td>
-          </tr>
-          <tr>
-            <td>Renán Arias</td>
-            <td>10659456312</td>
-            <td>Estudiante</td>
-          </tr>
-        </tbody>
-      </table>
+	
+             <table class="highlight responsive-table">
+                    <tr class='orange-text'><th>Nombres</th> <th>Apellidos</th> <th>Carrera</th> <th>Cargo</th></tr>  
+                    
+            <%
+              
+            if( request.getAttribute("usuarios")!=null){
+          List<Usuario> usuarios  = (List<Usuario>)request.getAttribute("usuarios");
+           for (Usuario usuario : usuarios) {
+         %>      
+          <tr><td><%=usuario.getNombreusuario()%> </td> <td><%=usuario.getApellidousuario()%> </td> <td><%=usuario.getCarrerausuario()%> </td> <td><%=usuario.getCargousuario()%> </td></tr>
+         <%    
+          
+          }
+       }
+    %>
+                        
+    
+                  </table>
+            
     </div>
 </div>	
 
