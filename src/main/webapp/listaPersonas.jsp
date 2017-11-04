@@ -33,7 +33,7 @@
 		<ul id="dropdown2" class="dropdown-content orange lighten-5">
 			 <li><a href="listaPersonas.jsp" class="orange-text">Lista Personas</a></li>
 			 <li><a href="#!" class="orange-text">Lista Materiales</a></li>
-			 <li><a href="listaPrestamos.jsp" class="orange-text">Lista PrÃ©stamos</a></li>
+			 <li><a href="listaPrestamos.jsp" class="orange-text">Lista Préstamos</a></li>
 		</ul>
 
 		 <nav>

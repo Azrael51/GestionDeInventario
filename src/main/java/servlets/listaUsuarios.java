@@ -32,7 +32,7 @@ public class listaUsuarios extends HttpServlet {
        
        
         //Redireccionando la informacion
-        RequestDispatcher redireccion = request.getRequestDispatcher("listaPersonas.html");
+        RequestDispatcher redireccion = request.getRequestDispatcher("listaPersonas.jsp");
         redireccion.forward(request, response);
         
         
