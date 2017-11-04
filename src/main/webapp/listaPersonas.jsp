@@ -26,14 +26,14 @@
 		<!-- Dropdown Structure -->
 		<!-- Los dropdowns #2 hacen parte de la vista móvil -->
 		<ul id="dropdown1" class="dropdown-content orange lighten-5">
-			 <li><a href="listaPersona.html" class="orange-text">Lista Personas</a></li>
+			 <li><a href="listaPersona.jsp" class="orange-text">Lista Personas</a></li>
 			 <li><a href="#!" class="orange-text">Lista Materiales</a></li>
-			 <li><a href="listaPrestamos.html" class="orange-text">Lista Préstamos</a></li>
+			 <li><a href="listaPrestamos.jsp" class="orange-text">Lista Préstamos</a></li>
 		</ul>
 		<ul id="dropdown2" class="dropdown-content orange lighten-5">
-			 <li><a href="listaPersonas.html" class="orange-text">Lista Personas</a></li>
+			 <li><a href="listaPersonas.jsp" class="orange-text">Lista Personas</a></li>
 			 <li><a href="#!" class="orange-text">Lista Materiales</a></li>
-			 <li><a href="listaPrestamos.html" class="orange-text">Lista Préstamos</a></li>
+			 <li><a href="listaPrestamos.jsp" class="orange-text">Lista Préstamos</a></li>
 		</ul>
 
 		 <nav>
