@@ -20,6 +20,10 @@
         <servlet-name>registroToCreate</servlet-name>
         <servlet-class>servlets.registroCreate</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>listaUsuarios</servlet-name>
+        <servlet-class>servlets.listaUsuarios</servlet-class>
+    </servlet>
     
     
     
@@ -31,5 +35,9 @@
      <servlet-mapping>
         <servlet-name>registroToCreate</servlet-name>
         <url-pattern>/registroCreate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>listaUsuarios</servlet-name>
+        <url-pattern>/listaUsuarios</url-pattern>
     </servlet-mapping>
 </web-app>

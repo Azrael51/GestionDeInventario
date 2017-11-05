@@ -85,7 +85,11 @@
                         
     
                   </table>
-            
+      <form action="registroCreate">
+                      <button type="submit" role="button" > Mostrar Lista</button>
+                          
+        </form>
+                           
     </div>
 </div>	
 
