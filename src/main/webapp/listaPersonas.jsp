@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ 
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -67,26 +70,15 @@
 <div class="container">
 	<div class="row card-panel orange lighten-4">
 	
-            
-                             <table class="highlight responsive-table">
-                    <tr><th>Nombre</th> <th>Cargo</th> <th> ID</th></tr>  
-                    
-            <%
-              
-            if( request.getAttribute("usuarios")!=null){
-          List<Usuario> usuarios  = (List<Usuario>)request.getAttribute("usuarios");
-           for (Usuario usuario : usuarios) {
-         %>      
-          <tr><td><%=usuario.getNombreusuario()%> </td> <td><%=usuario.getCargousuario()%> </td> <td><%=usuario.getIdusuario()%> </td></tr>
-         <%    
-          
-          }
-       }
-    %>
-                        
-    
-                  </table>
-                              
+            <table>
+                <c:forEach items="${usuarios}" var="usuarios">
+                <tr>
+                    <td>${usuarios.nombreusuario}</td>
+                </tr>
+                 </c:forEach>
+            </table>
+                         <!--    <table class="highlight responsive-table"> -->
+                   
                            
     </div>
 </div>	
