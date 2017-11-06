@@ -73,7 +73,7 @@
             <table>
                 <c:forEach items="${usuarios}" var="usuarios">
                 <tr>
-                    <td>${usuarios.nombreusuario}</td>
+                    <td>${usuarios.getNombreusuario()}</td>
                 </tr>
                  </c:forEach>
             </table>
