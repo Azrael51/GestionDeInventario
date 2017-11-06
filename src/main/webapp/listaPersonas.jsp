@@ -67,8 +67,9 @@
 <div class="container">
 	<div class="row card-panel orange lighten-4">
 	
-             <table class="highlight responsive-table">
-                    <tr class='orange-text'><th>Nombres</th> <th>Apellidos</th> <th>Carrera</th> <th>Cargo</th></tr>  
+            
+                             <table class="highlight responsive-table">
+                    <tr><th>Nombre</th> <th>Cargo</th> <th> ID</th></tr>  
                     
             <%
               
@@ -76,7 +77,7 @@
           List<Usuario> usuarios  = (List<Usuario>)request.getAttribute("usuarios");
            for (Usuario usuario : usuarios) {
          %>      
-          <tr><td><%=usuario.getNombreusuario()%> </td> <td><%=usuario.getApellidousuario()%> </td> <td><%=usuario.getCarrerausuario()%> </td> <td><%=usuario.getCargousuario()%> </td></tr>
+          <tr><td><%=usuario.getNombreusuario()%> </td> <td><%=usuario.getCargousuario()%> </td> <td><%=usuario.getIdusuario()%> </td></tr>
          <%    
           
           }
@@ -85,10 +86,7 @@
                         
     
                   </table>
-      <form action="registroCreate">
-                      <button type="submit" role="button" > Mostrar Lista</button>
-                          
-        </form>
+                              
                            
     </div>
 </div>	
