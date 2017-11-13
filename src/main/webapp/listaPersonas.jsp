@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
  
 <html lang="en">
 <head>
@@ -70,13 +70,13 @@
 <div class="container">
 	<div class="row card-panel orange lighten-4">
 	
-            <table>
-                <c:forEach items="${usuarios}" var="usuarios">
-                <tr>
-                    <td>${usuarios.getNombreusuario()}</td>
-                </tr>
-                 </c:forEach>
-            </table>
+     <c:forEach items="${usuarios}" var="usuario">
+   <tr>
+       <td>${usuario.getNombreusuario()}</td>
+       <td>${usuario.getIdusuario()}</td>
+       <td>${usuario.getSemestreusuario()}</td>
+    </tr>
+</c:forEach>
                          <!--    <table class="highlight responsive-table"> -->
                    
                            
