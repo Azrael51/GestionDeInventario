@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="Datos.*"%>
+<%@ page import="java.util.List" %>
  
 <html lang="en">
 <head>
@@ -10,6 +11,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+        
 
 	<script>
 	    var OneSignal = window.OneSignal || [];
@@ -70,14 +72,25 @@
 <div class="container">
 	<div class="row card-panel orange lighten-4">
 	
-     <c:forEach items="${usuarios}" var="usuario">
-   <tr>
-       <td>${usuario.getNombreusuario()}</td>
-       <td>${usuario.getIdusuario()}</td>
-       <td>${usuario.getSemestreusuario()}</td>
-    </tr>
-</c:forEach>
+
                          <!--    <table class="highlight responsive-table"> -->
+                          <table class="responsive-table highlight">
+                    <tr><th>ID</th> <th>Nombre</th> <th> Cargo</th></tr>  
+                    
+            <%
+            if( request.getAttribute("admins")!=null){
+          List<Administrativo> admins  = (List<Administrativo>)request.getAttribute("admins");
+           for (Administrativo admin : admins) {
+         %>      
+          <tr><td><%=admin.getIdadministrativo()%> </td> <td><%=admin.getNombreadmin()%> </td> <td><%=admin.getTipopermiso()%> </td></tr>
+         <%      
+          }
+       }
+    %>
+                        
+    
+                  </table>
+                         
                    
                            
     </div>
